@@ -1,0 +1,24 @@
+// BUTTONS
+.btn {
+  padding: var(--p-button);
+  border-radius: 6.25rem;
+  text-transform: uppercase;
+  color: var(--white);
+  letter-spacing: .15rem;
+  line-height: 1;
+}
+
+.btn-primary {
+  background-color: var(--prim-orange);
+  border-color: var(--prim-orange);
+  font-weight:700;
+  &:hover, &:focus-visible {
+    color: var(--prim-orange);
+    background-color: #fff;
+    border-color: #fff;
+  }
+  &:active {
+    background-color: var(--prim-orange) !important;
+    border-color: var(--prim-orange) !important;
+  }
+}

@@ -1,0 +1,75 @@
+// CARD
+.card {
+
+}
+
+// CARD RATING
+.card-rating {
+  width: 100%;
+  max-width: 23.4375rem;
+
+  display: inline-flex;
+  flex-flow: column;
+  gap: 1.5rem;
+
+  padding: var(--p-card-sm) var(--p-card);
+
+  background: linear-gradient(darken((hsl(213, 19%, 18%)), 5%) 10% , darken((hsl(213, 19%, 18%)), 5%) 50%);
+  color: var(--white);
+  border-radius: var(--border-radius);
+
+  @media screen and (min-width: 320px){
+    padding: var(--p-card-sm);
+  }
+  @media screen and (min-width: 768px) {
+    max-width: 440px;
+    padding: var(--p-card-md);
+  }
+}
+
+.card-rating--form-success {
+  text-align: center;
+}
+
+.card-rating__icon {
+  width: 2.1875rem;
+  height: 2.1875rem;
+  @media screen and (min-width: 320px){
+    width: 3.125rem;
+    height: 3.125rem;
+  }
+}
+
+.card-rating__title {
+  margin-bottom: -.75rem;
+  font-size: 1.625rem;
+
+  @media screen and (min-width: 320px) {
+    margin-bottom: -1rem;
+  }
+  @media screen and (min-width: 576px) {
+    font-size: 1.75rem
+  }
+}
+
+.card-rating__form {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1.5rem;
+}
+
+.card-rating__input-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-rating__radio-selected {
+  width: 250px;
+  margin: 0 auto;
+  display: inline-block;
+  padding: .65rem 1rem .6rem 1rem;
+  color: var(--prim-orange);
+  background-color: lighten(hsl(213, 19%, 18%), 4%);
+  border-radius: 6.25rem;
+  font-size: 1rem;
+}
