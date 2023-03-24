@@ -1,29 +1,21 @@
 
 .input-radio-rating__input  {
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  place-content: center;
 
   width: 2.8125rem;
   height: 2.8125rem;
 
+  margin: 0;
+  padding:0;
+
   border-radius: 6.25rem;
   cursor: pointer;
-  margin: 0; padding:0;
-  @media screen and (min-width: 320px){
-    width: 3.125rem;
-    height: 3.125rem;
-  }
-  /* Add if not using autoprefixer */
+
   -webkit-appearance: none;
   appearance: none;
-  /* For iOS < 15 to remove gradient background */
   background-color: lighten(hsl(213, 19%, 18%), 4%);
-
-  display: grid;
-  place-content: center;
-  border-radius: 50%;
 
   &::before {
     content: "";
@@ -60,6 +52,10 @@
       color: var(--white);
     }
   }
+  @media screen and (min-width: 320px){
+    width: 3.125rem;
+    height: 3.125rem;
+  }
 }
 
 .input-radio-rating {
@@ -68,8 +64,8 @@
   justify-content: center;
   align-items: center;
 
-  width: 2.8125rem;
-  height: 2.8125rem;
+  width: 2.5rem;
+  height: 2.5rem;
 
   border-radius: 6.25rem;
   cursor: pointer;
